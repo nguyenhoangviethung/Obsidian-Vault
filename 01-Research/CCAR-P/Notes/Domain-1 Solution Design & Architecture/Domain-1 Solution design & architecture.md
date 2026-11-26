@@ -3,6 +3,7 @@ type: note
 topic: ccar-p
 status: in-progress
 up: "[[Hub - CCAR-P]]"
+created: 2026-11-26
 exam_weight: 17%
 tags:
   - type/note
@@ -187,3 +188,11 @@ When reading a CCAR-P Domain 1 scenario, immediately highlight these trigger phr
 - [ ] Can I immediately identify which tasks belong to **Claude vs. Code vs. Specialized System vs. Person**?
 - [ ] Can I spot **which constraint in a scenario is a Hard Constraint** that immediately eliminates 2–3 distractor answers?
 - [ ] Can I explain the **3 main failure modes of multi-agent systems** and when single-agent + clean tools is superior?
+
+---
+
+## 6. Related Links
+- Topic Hub: [[Hub - CCAR-P]]
+- Lessons: [[Lesson 1.1 - From Business Problem to Claude Solution]]
+- Glossary: [[CCAR-P Glossary - Core Terms]]
+- Practice & Traps: [[CCAR-P Exam Traps & Anti-Patterns Cheatsheet]] | [[CCAR-P Sample Questions - Set 01]]
