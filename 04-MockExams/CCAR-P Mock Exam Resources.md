@@ -47,6 +47,16 @@ tags:
   - Có bài viết hướng dẫn và mock exam cho cả CCAR-P và CCAR-F, hỗ trợ **Study Mode** (xem đáp án ngay) và **Timed Exam Mode** (mô phỏng 120 phút).
 - **Preporato** — https://preporato.com
   - Nền tảng luyện thi scenario-based cho CCAR-P có giải thích chi tiết cho từng phương án.
+- **Tutorials Dojo** — https://tutorialsdojo.com
+  - Có study guide, lộ trình ôn tập và bộ đề luyện thi CCAR-P bám sát 7 domain (Integration, Solution Design, Evaluation, Governance, Developer Productivity...).
+- **AI Wisdom** — https://aiwisdom.dev
+  - Cung cấp khóa học, kế hoạch ôn tập và bộ câu hỏi luyện tập miễn phí chia theo từng domain của CCAR-P kèm giải thích chi tiết đáp án đúng/sai.
+- **CertSafari** — https://certsafari.com
+  - Tổng hợp các câu hỏi tình huống chuyên sâu về LLM-as-a-Judge bias, Prompt Caching, ADR & kiểm soát rủi ro xác suất cho CCAR-P.
+- **ClaudeCertPrep** — https://claudecertprep.com
+  - Tài liệu và bài tập tập trung vào các anti-pattern và bẫy kiến trúc thực chiến của chứng chỉ Claude Certified Architect.
+- **YouTube Walkthroughs** — Tìm kiếm từ khóa `"CCAR-P practice exam walkthrough"`
+  - Các video phân tích đề thi mẫu theo phương pháp loại trừ (*method of elimination*) cho các câu tình huống kiến trúc dài.
 
 ---
 
@@ -72,10 +82,15 @@ tags:
 - `avidevelops/claude-architect-exam-prep` — https://github.com/avidevelops/claude-architect-exam-prep
 - `ankitrahejagatech/claude-certified-architect-prep` — https://github.com/ankitrahejagatech/claude-certified-architect-prep
 - `OlivierAlter/Claude-Certified-Architect-Foundations-Certification-Exam` — https://github.com/OlivierAlter/Claude-Certified-Architect-Foundations-Certification-Exam (có bộ câu hỏi theo 5 domain Foundations và terminal skill để thi thử).
+- `utkarsh1agarwal/claude-architect-exam-guide` — https://github.com/utkarsh1agarwal/claude-architect-exam-guide (có Interactive Mock Exam Player bấm giờ và chấm điểm tự động cho 5 domain CCAR-F).
+- `szymonpaluch/claude-certified-architect-foundations-practice-exam` — https://github.com/szymonpaluch/claude-certified-architect-foundations-practice-exam (ngân hàng câu hỏi markdown tình huống và trình thi thử trên trình duyệt).
+- `dnacenta/claude-certified-architect` — https://github.com/dnacenta/claude-certified-architect (study guide theo từng domain kèm flashcard và đáp án ẩn).
 
 ---
 
 ## 4. Liên kết nội bộ
-- Xem câu hỏi thực hành tại: [[CCAR-P Sample Questions - Set 01]]
+- Bộ câu hỏi mẫu Set 01 (6 câu khởi động): [[CCAR-P Sample Questions - Set 01]]
+- Bộ đề Mini-Test Set 02 (14 câu đủ 7 domain): [[CCAR-P Mock Exam - Full Mini-Test (Set 02 - 14 Câu theo 7 Domain)]]
+- Tổng hợp bẫy đề thi & Anti-patterns: [[CCAR-P Exam Traps & Anti-Patterns Cheatsheet]]
 - Ghi chép lỗi sai khi làm bài: [[Mock Exam Mistake Log Template]]
-- Ghi chú gốc: [[CCAR-P]]
+- Tài liệu nguồn Domain 1: [[Domain-1 Solution design & architecture]]
