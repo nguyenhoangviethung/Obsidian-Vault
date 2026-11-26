@@ -1,0 +1,79 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - not:
+        - 'file.inFolder("99-System")'
+
+properties:
+  topic:
+    displayName: Topic
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  up:
+    displayName: Parent Hub
+  created:
+    displayName: Created
+
+views:
+  - type: table
+    name: "Research Hubs"
+    filters:
+      and:
+        - 'type == "hub"'
+    order:
+      - file.name
+      - topic
+      - status
+      - created
+
+  - type: table
+    name: "In Progress"
+    filters:
+      and:
+        - 'status == "in-progress"'
+    groupBy:
+      property: topic
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - up
+      - status
+
+  - type: table
+    name: "Inbox"
+    filters:
+      and:
+        - 'file.inFolder("00-Inbox")'
+    order:
+      - file.name
+      - topic
+      - status
+      - file.mtime
+
+  - type: table
+    name: "Shared Knowledge"
+    filters:
+      and:
+        - 'file.inFolder("02-Shared-Knowledge")'
+    order:
+      - file.name
+      - topic
+      - status
+      - up
+
+  - type: table
+    name: "All Notes by Topic"
+    filters:
+      and:
+        - 'type != "dashboard"'
+    groupBy:
+      property: topic
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - status
+      - up

@@ -1,6 +1,11 @@
 ---
+type: practice
+topic: ccar-p
+status: done
+up: "[[Hub - CCAR-P]]"
 tags:
-  - ccar-p
+  - type/practice
+  - topic/ccar-p
   - mock-exam
   - cheatsheet
   - anti-patterns

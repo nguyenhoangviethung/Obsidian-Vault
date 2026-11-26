@@ -1,11 +1,15 @@
 ---
+type: note
+topic: ccar-p
+status: in-progress
+up: "[[Hub - CCAR-P]]"
+exam_weight: 17%
 tags:
-  - ccar-p
+  - type/note
+  - topic/ccar-p
   - domain-1
   - solution-design
   - architecture
-exam_weight: 17%
-status: in-progress
 ---
 
 # Domain 1: Solution Design & Architecture (17%)

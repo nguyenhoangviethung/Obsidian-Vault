@@ -1,8 +1,12 @@
 ---
+type: practice
+topic: ccar-p
+status: in-progress
+up: "[[Hub - CCAR-P]]"
 tags:
-  - ccar-p
+  - type/practice
+  - topic/ccar-p
   - mistake-log
-  - template
 ---
 
 # Mock Exam Mistake Log

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "ctime": 1795679500000,
+      "path": "00-Home.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1795679501000,
+      "path": "99-System/Bases/Research-Dashboard.base"
+    },
+    {
+      "type": "file",
+      "ctime": 1795679502000,
+      "path": "01-Research/CCAR-P/Hub - CCAR-P.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1795679503000,
+      "path": "99-System/Vault-Guide.md"
+    }
+  ]
+}

@@ -1,7 +1,14 @@
 ---
+type: hub
+topic: ccar-p
+status: in-progress
+up: "[[00-Home]]"
+created: 2026-11-25
+aliases:
+  - MOC - CCAR-P 4-Day Sprint
 tags:
-  - ccar-p
-  - moc
+  - type/hub
+  - topic/ccar-p
   - study-plan
   - 4-day-sprint
 ---
@@ -35,7 +42,7 @@ tags:
 
 ## Vault Navigation
 
-### Domain Notes (`01-Sources/CCAR_P/`)
+### Domain Notes (`01-Research/CCAR-P/Notes/`)
 - [[Domain-1 Solution design & architecture]] (17%)
   - [[Lesson 1.1 - From Business Problem to Claude Solution]]
 - [ ] Domain-2 Models, Prompting & Context Engineering (13%)
@@ -45,10 +52,34 @@ tags:
 - [ ] Domain-6 Stakeholders & Lifecycle (14%)
 - [ ] Domain-7 Developer Productivity & Enablement (7%)
 
-### Core Reference (`03-KeyNotes/`)
+### Core KeyNotes (`01-Research/CCAR-P/KeyNotes/`)
 - [[CCAR-P Glossary - Core Terms]]
 
-### Practice & Mock Exams (`04-MockExams/`)
+### Practice & Mock Exams (`01-Research/CCAR-P/Practice/`)
 - [[CCAR-P Mock Exam Resources]]
+- [[CCAR-P Exam Traps & Anti-Patterns Cheatsheet]]
 - [[CCAR-P Sample Questions - Set 01]]
+- [[CCAR-P Mock Exam - Full Mini-Test (Set 02 - 14 Câu theo 7 Domain)]]
 - [[Mock Exam Mistake Log Template]]
+
+---
+
+## Auto-Tracked Notes (Obsidian Base)
+
+```base
+filters:
+  and:
+    - 'file.hasTag("topic/ccar-p")'
+    - 'type != "hub"'
+views:
+  - type: table
+    name: "All CCAR-P Notes"
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - status
+      - up
+```

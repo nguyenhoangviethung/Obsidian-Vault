@@ -1,14 +1,57 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "-path:99-System/Templates",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#type/dashboard",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "tag:#type/hub",
+      "color": {
+        "a": 1,
+        "rgb": 10899959
+      }
+    },
+    {
+      "query": "tag:#type/concept",
+      "color": {
+        "a": 1,
+        "rgb": 2278750
+      }
+    },
+    {
+      "query": "tag:#type/source",
+      "color": {
+        "a": 1,
+        "rgb": 3899638
+      }
+    },
+    {
+      "query": "tag:#type/practice",
+      "color": {
+        "a": 1,
+        "rgb": 16350486
+      }
+    },
+    {
+      "query": "path:00-Inbox",
+      "color": {
+        "a": 1,
+        "rgb": 9737364
+      }
+    }
+  ],
   "collapse-display": true,
-  "showArrow": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,

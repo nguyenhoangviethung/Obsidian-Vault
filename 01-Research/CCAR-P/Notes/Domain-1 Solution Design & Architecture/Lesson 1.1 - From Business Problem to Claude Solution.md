@@ -1,6 +1,11 @@
 ---
+type: note
+topic: ccar-p
+status: in-progress
+up: "[[Domain-1 Solution design & architecture]]"
 tags:
-  - ccar-p
+  - type/note
+  - topic/ccar-p
   - domain-1
   - lesson-1-1
 ---
@@ -111,4 +116,4 @@ An enterprise sponsor asks to *"deploy Claude to make internal HR policy Q&A muc
 ## 4. Linked Concepts
 - [[Domain-1 Solution design & architecture]]
 - [[CCAR-P Glossary - Core Terms]]
-- [[MOC - CCAR-P 4-Day Sprint]]
+- [[Hub - CCAR-P]]

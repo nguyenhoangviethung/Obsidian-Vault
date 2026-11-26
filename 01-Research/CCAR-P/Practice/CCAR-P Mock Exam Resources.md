@@ -1,6 +1,11 @@
 ---
+type: source
+topic: ccar-p
+status: done
+up: "[[Hub - CCAR-P]]"
 tags:
-  - ccar-p
+  - type/source
+  - topic/ccar-p
   - mock-exam
   - resources
 ---
