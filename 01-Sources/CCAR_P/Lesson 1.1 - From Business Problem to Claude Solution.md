@@ -50,14 +50,14 @@ Never treat a stakeholder's request (e.g., *"Build an AI agent"*) as a technical
 
 ### Step 2 & Step 3 — Split into Testable Tasks & Assign Owners (`WHAT`)
 
-| # | Discrete Task | One Clear Test | Best Owner | Why? |
-| :-: | :--- | :--- | :--- | :--- |
-| 1 | Classify ticket intent & detect out-of-scope (fraud/chargeback) | Precision/Recall $\ge$ 95% on 200 labeled tickets | **Claude** | Unstructured customer emails with varied wording and emotion. |
-| 2 | Fetch order details, purchase date, & item price | Returns exact DB record for order ID | **Specialized System** *(Order DB / ERP API)* | Source of truth lives in structured database. |
-| 3 | Check if `today - purchase_date <= 30 days` & calculate exact refund + tax | 100% pass on unit tests (edge dates, decimals) | **Deterministic Code** | Exact date logic and math must be 100% deterministic. |
-| 4 | Draft empathetic customer response explaining approval/denial + policy reason | Human/LLM-judge rubric score $\ge$ 4.5/5, no policy contradiction | **Claude** | Natural language drafting & tone adaptation. |
-| 5 | Approve & trigger refund if amount $> \$200$ | Manager approval recorded in audit log before payout API fires | **Person (HITL)** | High-stakes irreversible financial action. |
-| 6 | Execute payout API & write immutable audit trail | Payout matches calculated amount; log entry created | **Deterministic Code / Payment System** | Side-effecting financial action must be controlled in code. |
+|  #  | Discrete Task                                                                 | One Clear Test                                                    | Best Owner                                    | Why?                                                          |
+| :-: | :---------------------------------------------------------------------------- | :---------------------------------------------------------------- | :-------------------------------------------- | :------------------------------------------------------------ |
+|  1  | Classify ticket intent & detect out-of-scope (fraud/chargeback)               | Precision/Recall $\ge$ 95% on 200 labeled tickets                 | **Claude**                                    | Unstructured customer emails with varied wording and emotion. |
+|  2  | Fetch order details, purchase date, & item price                              | Returns exact DB record for order ID                              | **Specialized System** *(Order DB / ERP API)* | Source of truth lives in structured database.                 |
+|  3  | Check if `today - purchase_date <= 30 days` & calculate exact refund + tax    | 100% pass on unit tests (edge dates, decimals)                    | **Deterministic Code**                        | Exact date logic and math must be 100% deterministic.         |
+|  4  | Draft empathetic customer response explaining approval/denial + policy reason | Human/LLM-judge rubric score $\ge$ 4.5/5, no policy contradiction | **Claude**                                    | Natural language drafting & tone adaptation.                  |
+|  5  | Approve & trigger refund if amount $> \$200$                                  | Manager approval recorded in audit log before payout API fires    | **Person (HITL)**                             | High-stakes irreversible financial action.                    |
+|  6  | Execute payout API & write immutable audit trail                              | Payout matches calculated amount; log entry created               | **Deterministic Code / Payment System**       | Side-effecting financial action must be controlled in code.   |
 
 > [!warning] Notice What Just Happened!
 > The stakeholder asked for an *"AI agent"*, yet decomposing the problem proved that **only 2 of 6 tasks belong to Claude**—and the overall flow is a **fixed SOP (deterministic workflow with HITL)**, NOT an autonomous agent!
