@@ -27,6 +27,7 @@ Never treat a stakeholder's request (e.g., *"Build an AI agent"*) as a technical
 | **3** | **Owners** *(WHAT)*    | Who is the most reliable owner for each task?             | **Claude** · **Code** · **Specialized System** · **Person (HITL)**                                    |
 | **4** | **Build Path** *(HOW)* | Which implementation path survives non-negotiable limits? | Apply **Hard Constraints first** (compliance, SLA, data residency, budget) to eliminate invalid paths |
 | **5** | **Success** *(PROOF)*  | How will we objectively prove it worked—or failed?        | **Falsifiable SMART criteria** anchored directly to Step 1's **Baseline**                             |
+|       |                        |                                                           |                                                                                                       |
 
 ---
 
