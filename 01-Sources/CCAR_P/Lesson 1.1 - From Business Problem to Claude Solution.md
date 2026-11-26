@@ -20,13 +20,13 @@ tags:
 
 Never treat a stakeholder's request (e.g., *"Build an AI agent"*) as a technical spec. Treat it as a **hypothesis**, then walk through **5 sequential decisions**—each decision narrows the next:
 
-| Step | Stage | Core Question | Key Elements |
-| :-: | :--- | :--- | :--- |
-| **1** | **Problem** *(WHY)* | What real problem are we solving and within what limits? | **Now (Baseline)** · **Target** · **Limits (Hard/Soft Constraints)** · **Scope (In/Out)** |
-| **2** | **Tasks** *(WHAT)* | What smaller units of work make up this solution? | Break down until each task has **one clear, independent test** |
-| **3** | **Owners** *(WHAT)* | Who is the most reliable owner for each task? | **Claude** · **Code** · **Specialized System** · **Person (HITL)** |
+| Step  | Stage                  | Core Question                                             | Key Elements                                                                                          |
+| :---: | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| **1** | **Problem** *(WHY)*    | What real problem are we solving and within what limits?  | **Now (Baseline)** · **Target** · **Limits (Hard/Soft Constraints)** · **Scope (In/Out)**             |
+| **2** | **Tasks** *(WHAT)*     | What smaller units of work make up this solution?         | Break down until each task has **one clear, independent test**                                        |
+| **3** | **Owners** *(WHAT)*    | Who is the most reliable owner for each task?             | **Claude** · **Code** · **Specialized System** · **Person (HITL)**                                    |
 | **4** | **Build Path** *(HOW)* | Which implementation path survives non-negotiable limits? | Apply **Hard Constraints first** (compliance, SLA, data residency, budget) to eliminate invalid paths |
-| **5** | **Success** *(PROOF)* | How will we objectively prove it worked—or failed? | **Falsifiable SMART criteria** anchored directly to Step 1's **Baseline** |
+| **5** | **Success** *(PROOF)*  | How will we objectively prove it worked—or failed?        | **Falsifiable SMART criteria** anchored directly to Step 1's **Baseline**                             |
 
 ---
 
