@@ -52,7 +52,8 @@ Sau khi **clone và kiểm tra trực tiếp mã nguồn + LICENSE + DB Schema**
 - [[03 - Recommended Reference Architecture for cAI]] — Đề xuất kiến trúc mục tiêu cho cAI, sơ đồ hệ thống, cơ chế tạo Agent không kéo-thả, chiến lược scale `n` domain & lộ trình kick-off.
 - [[04 - Áp dụng Reference Architecture vào đề bài cAI]] — Đối chiếu kiến trúc 03 với brief, thêm Case & Process Plane, áp dụng thử cho Domain Pack Tuyển dụng, lộ trình 12 tuần.
 
-### Khái niệm & Tra cứu (`KeyNotes/`)
+### Khái niệm & Tra cứu (`KeyNotes/` & Canvas)
+- [[cAI Architecture - Layer Flow.canvas]] — Sơ đồ trực quan 5 lớp kiến trúc (Note 04) + luồng thực tế 1 hồ sơ Tuyển dụng đi qua từng lớp.
 - [[cAI Glossary - Thuật Ngữ Kiến Trúc & Nghiệp Vụ]] — Bảng tra cứu hơn 70 thuật ngữ kiến trúc, bảo mật, eval, bản quyền & nghiệp vụ dùng trong toàn bộ dự án cAI.
 
 ### Tài liệu nguồn (`Sources/`)
