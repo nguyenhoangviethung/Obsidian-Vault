@@ -39,21 +39,21 @@ Ba tiêu chí trong [[Hub - cAI]] (B2B sellable, người dùng tự tạo agent
 
 ## 2. Đối chiếu yêu cầu brief với kiến trúc 03
 
-| Yêu cầu trong brief | Kiến trúc 03 đáp ứng bằng | Mức | Khoảng trống |
-| :--- | :--- | :---: | :--- |
-| 3 cụm theo khung, bàn giao giữa cụm | Group chat + `@mention` + Typed Handoff (OpenBot) | 🟡 | Typed handoff là điểm tốt. Nhưng group chat vẫn lấy hội thoại làm trung tâm; chưa có mô hình hồ sơ và giai đoạn |
-| Khung APQC / CLM / phễu / Bloom | Domain Pack (skills + agents + vMCP + eval + policy) | 🟡 | Pack chưa chứa **định nghĩa quy trình**. "Structured Playbook (Markdown có bước bắt buộc)" do LLM thực thi nên không ép buộc được |
-| Cổng HITL bắt buộc, đúng người | Approval Cards + CEL Action Policy | 🟡 | CEL viết được luật thẩm quyền, rất tốt. Còn thiếu: chuyển cho **một role cụ thể**, SoD, hạn chót, leo thang, uỷ quyền, gói bằng chứng cho người duyệt |
-| Không tự hành động với việc có hậu quả lớn | CEL deny-before-allow + 3 mức duyệt do người dùng chọn | 🔴 | Người dùng chọn "Tự duyệt theo rule" cho lệnh chi là vi phạm brief. Mức người dùng chọn phải bị **chặn trần bởi policy của tổ chức** |
-| Guard nội dung (an toàn trẻ em, PII, secret, chèn lệnh) | Unified Guardrails trên LLM + MCP gateway (Obot) | 🟢 | Đặt ở gateway nên agent không đi vòng được. Đúng chỗ |
-| Guard nghiệp vụ (fairness, kiểm soát 100%) | Chưa có | 🔴 | Loại guard này cần ngữ cảnh hồ sơ, nên phải móc vào **bước chuyển giai đoạn** |
-| Skill, connector dùng chung (OCR, ERP, ngân hàng, thuế, Zalo) | vMCP + OpenAPI → MCP + Pack Registry | 🟢 | Đã nêu MISA, Bravo, Base. Hoá đơn điện tử, ngân hàng, cổng thuế vẫn cần làm riêng |
-| P&L theo tenant, RBAC, audit, tự host | RLS Org → Space, SCIM, AuditEventForwarding, Budget Brakes, 3 mode triển khai | 🟢 | Cần custom role (brief có 7 role); note 02 đã ghi nhận điểm này |
-| Định nghĩa xong: eval, staging, demo | Golden Eval Set trong Pack + Skill Studio (Paperclip) | 🟡 | Thiếu staging với dữ liệu tổng hợp, và thiếu eval sinh từ dữ liệu lịch sử |
-| Mức dùng thật, KPI, lớp đối chứng | Chưa có | 🔴 | Cần một lớp đo lường: sự kiện sử dụng + thời điểm chuyển giai đoạn của hồ sơ |
-| Người dùng ngoài (ứng viên, nhà cung cấp) | Omnichannel Surfaces | 🟡 | Danh tính người ngoài cần realm riêng; nội dung từ ngoài phải gắn nhãn không tin cậy |
-| Giáo dục: người dùng vị thành niên, LTI | Chưa có | 🔴 | Là một ứng dụng riêng, dùng chung governance plane |
-| 12 tuần, 60 người | Phương án A: MVP 4–6 tuần | 🟢 | Khả thi nếu chỉ làm 2 phòng ban (đúng phương án thay thế của brief) |
+| Yêu cầu trong brief                                           | Kiến trúc 03 đáp ứng bằng                                                     | Mức | Khoảng trống                                                                                                                                          |
+| :------------------------------------------------------------ | :---------------------------------------------------------------------------- | :-: | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3 cụm theo khung, bàn giao giữa cụm                           | Group chat + `@mention` + Typed Handoff (OpenBot)                             | 🟡  | Typed handoff là điểm tốt. Nhưng group chat vẫn lấy hội thoại làm trung tâm; chưa có mô hình hồ sơ và giai đoạn                                       |
+| Khung APQC / CLM / phễu / Bloom                               | Domain Pack (skills + agents + vMCP + eval + policy)                          | 🟡  | Pack chưa chứa **định nghĩa quy trình**. "Structured Playbook (Markdown có bước bắt buộc)" do LLM thực thi nên không ép buộc được                     |
+| Cổng HITL bắt buộc, đúng người                                | Approval Cards + CEL Action Policy                                            | 🟡  | CEL viết được luật thẩm quyền, rất tốt. Còn thiếu: chuyển cho **một role cụ thể**, SoD, hạn chót, leo thang, uỷ quyền, gói bằng chứng cho người duyệt |
+| Không tự hành động với việc có hậu quả lớn                    | CEL deny-before-allow + 3 mức duyệt do người dùng chọn                        | 🔴  | Người dùng chọn "Tự duyệt theo rule" cho lệnh chi là vi phạm brief. Mức người dùng chọn phải bị **chặn trần bởi policy của tổ chức**                  |
+| Guard nội dung (an toàn trẻ em, PII, secret, chèn lệnh)       | Unified Guardrails trên LLM + MCP gateway (Obot)                              | 🟢  | Đặt ở gateway nên agent không đi vòng được. Đúng chỗ                                                                                                  |
+| Guard nghiệp vụ (fairness, kiểm soát 100%)                    | Chưa có                                                                       | 🔴  | Loại guard này cần ngữ cảnh hồ sơ, nên phải móc vào **bước chuyển giai đoạn**                                                                         |
+| Skill, connector dùng chung (OCR, ERP, ngân hàng, thuế, Zalo) | vMCP + OpenAPI → MCP + Pack Registry                                          | 🟢  | Đã nêu MISA, Bravo, Base. Hoá đơn điện tử, ngân hàng, cổng thuế vẫn cần làm riêng                                                                     |
+| P&L theo tenant, RBAC, audit, tự host                         | RLS Org → Space, SCIM, AuditEventForwarding, Budget Brakes, 3 mode triển khai | 🟢  | Cần custom role (brief có 7 role); note 02 đã ghi nhận điểm này                                                                                       |
+| Định nghĩa xong: eval, staging, demo                          | Golden Eval Set trong Pack + Skill Studio (Paperclip)                         | 🟡  | Thiếu staging với dữ liệu tổng hợp, và thiếu eval sinh từ dữ liệu lịch sử                                                                             |
+| Mức dùng thật, KPI, lớp đối chứng                             | Chưa có                                                                       | 🔴  | Cần một lớp đo lường: sự kiện sử dụng + thời điểm chuyển giai đoạn của hồ sơ                                                                          |
+| Người dùng ngoài (ứng viên, nhà cung cấp)                     | Omnichannel Surfaces                                                          | 🟡  | Danh tính người ngoài cần realm riêng; nội dung từ ngoài phải gắn nhãn không tin cậy                                                                  |
+| Giáo dục: người dùng vị thành niên, LTI                       | Chưa có                                                                       | 🔴  | Là một ứng dụng riêng, dùng chung governance plane                                                                                                    |
+| 12 tuần, 60 người                                             | Phương án A: MVP 4–6 tuần                                                     | 🟢  | Khả thi nếu chỉ làm 2 phòng ban (đúng phương án thay thế của brief)                                                                                   |
 
 ---
 
