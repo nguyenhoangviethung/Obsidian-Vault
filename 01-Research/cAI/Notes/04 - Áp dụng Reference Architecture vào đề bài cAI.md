@@ -130,6 +130,7 @@ flowchart TB
   - Guard nội dung ở LLM/MCP gateway (Obot).
   - Guard nghiệp vụ ở Stage Hooks.
 
+
 ### Mỗi thành phần lấy từ đâu
 
 | Thành phần | Nguồn | Cách dùng | Cần kiểm chứng |
