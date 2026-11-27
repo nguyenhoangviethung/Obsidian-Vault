@@ -75,7 +75,9 @@
       "version": "1.0.0"
     },
     "deepl": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "auto_translate": false,
       "auto_translate_interval": 500,
@@ -154,7 +156,7 @@
       "api_key": "",
       "auto_translate": true,
       "auto_translate_interval": 500,
-      "validated": false,
+      "validated": null,
       "available_languages": [
         "af",
         "ak",
@@ -296,7 +298,9 @@
       "version": "1.1.0"
     },
     "azure_translator": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "region": "",
       "host": null,
@@ -443,7 +447,9 @@
       "version": "1.1.0"
     },
     "yandex_translate": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "auto_translate": false,
       "auto_translate_interval": 500,
@@ -554,7 +560,9 @@
       "version": "1.1.0"
     },
     "bergamot": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "validated": null,
       "auto_translate": false,
       "auto_translate_interval": 500,
@@ -1129,7 +1137,9 @@
       "version": "0.3.4"
     },
     "fanyi_youdao": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "app_id": "",
       "auto_translate": false,
@@ -1252,7 +1262,9 @@
       "version": "1.0.0"
     },
     "fanyi_baidu": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "app_id": "",
       "auto_translate": false,
@@ -1464,11 +1476,13 @@
       "version": "1.0.0"
     },
     "lingva_translate": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "host": "translate.plausibility.cloud",
       "auto_translate": false,
       "auto_translate_interval": 500,
-      "validated": false,
+      "validated": null,
       "available_languages": [
         "af",
         "ak",
@@ -1607,7 +1621,9 @@
       "version": "1.0.1"
     },
     "openai_translator": {
-      "selected_languages": [],
+      "selected_languages": [
+        "en"
+      ],
       "api_key": "",
       "host": "api.openai.com",
       "auto_translate": false,
