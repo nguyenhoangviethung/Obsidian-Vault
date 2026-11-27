@@ -50,9 +50,10 @@ Sau khi **clone và kiểm tra trực tiếp mã nguồn + LICENSE + DB Schema**
 - [[01 - Open-Source Landscape & License Audit]] — Bảng chấm điểm toàn cảnh 10 dự án OSS & kiểm toán bẫy bản quyền B2B.
 - [[02 - Deep-Dive Codebase Analysis]] — Giải phẫu mã nguồn thật (DB schema, auth, runtime, UX tạo agent, sandbox) của Mausbot, OpenBot, Rakazo, Paperclip, Obot, Kortix.
 - [[03 - Recommended Reference Architecture for cAI]] — Đề xuất kiến trúc mục tiêu cho cAI, sơ đồ hệ thống, cơ chế tạo Agent không kéo-thả, chiến lược scale `n` domain & lộ trình kick-off.
+- [[04 - Áp dụng Reference Architecture vào đề bài cAI]] — Đối chiếu kiến trúc 03 với brief, thêm Case & Process Plane, áp dụng thử cho Domain Pack Tuyển dụng, lộ trình 12 tuần.
 
 ### Tài liệu nguồn (`Sources/`)
-- [ ] `cAI - Product Brief (Claude Artifact).md` *(cần dán nội dung từ link Claude Artifact)*
+- [x] [[cAI - Product Brief (Claude Artifact)]] *(tóm tắt do Claude đọc ngày 18/11/2026; cần đối chiếu lại với artifact gốc)*
 
 ---
 
