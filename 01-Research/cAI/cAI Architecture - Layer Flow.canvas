@@ -1,342 +1,44 @@
 {
-  "nodes": [
-    {
-      "id": "grp-moat",
-      "type": "group",
-      "x": 0,
-      "y": 0,
-      "width": 760,
-      "height": 1760,
-      "color": "6",
-      "label": "A. LUỒNG POWER USER — BUILD-TIME (THE MOAT: Tạo & Tinh Chỉnh Quy Trình Không Cần Code)"
-    },
-    {
-      "id": "p1",
-      "type": "text",
-      "x": 40,
-      "y": 60,
-      "width": 680,
-      "height": 180,
-      "color": "6",
-      "text": "### 1. Nạp Nghiệp Vụ & Dữ Liệu Lịch Sử\n- **Power User làm:** Upload SOP / quy chế phòng ban, bảng thẩm quyền, rubric chấm điểm + **dữ liệu lịch sử** (CV/hóa đơn cũ đã xử lý).\n- **Giá trị:** Không phải bắt đầu từ trang giấy trắng hay ngồi vẽ flowchart kéo-thả."
-    },
-    {
-      "id": "p2",
-      "type": "text",
-      "x": 40,
-      "y": 300,
-      "width": 680,
-      "height": 200,
-      "color": "6",
-      "text": "### 2. Hội Thoại Đồng Thiết Kế (Meta-Bot Tự Tách 5 Lớp)\n- **Meta-Bot** đọc SOP, hỏi ngược 3–5 câu làm rõ rồi tự biên dịch ra đúng **5 lớp** (Power User không cần biết YAML/CEL/Python):\n  - Khung giai đoạn & SLA → `process/*.yaml` · Luật cứng → `rules/`\n  - Phán đoán AI → `skills/SKILL.md` · Duyệt & SoD → `authority.cel` · Tool → `vMCP`"
-    },
-    {
-      "id": "p3",
-      "type": "text",
-      "x": 40,
-      "y": 560,
-      "width": 680,
-      "height": 200,
-      "color": "6",
-      "text": "### 3. Tinh Chỉnh Trên 4 Bảng Trực Quan (Domain Studio)\n- **Bảng Giai đoạn:** Xem/sửa bước bắt buộc, hạn SLA, cổng HITL.\n- **Bảng Luật cứng (kiểu Excel):** Chỉnh ngưỡng tiền, bằng cấp, điều kiện loại.\n- **Ma trận Thẩm quyền:** Chọn Role duyệt, bật SoD *(bị khóa trần Policy tổ chức)*.\n- **Skill Editor & Teach-by-Demo:** Dạy agent bằng ví dụ thực tế."
-    },
-    {
-      "id": "p4",
-      "type": "text",
-      "x": 40,
-      "y": 820,
-      "width": 680,
-      "height": 195,
-      "color": "4",
-      "text": "### 4. Auto-Eval Từ Lịch Sử & Sửa Lệch Ngay Tại Chỗ\n- Hệ thống tự sinh bộ test: **Golden Eval** (từ lịch sử) + **Fairness** (đổi giới tính/tên) + **Red-Team** (chèn lệnh).\n- **Power User làm:** Xem các ca AI chấm lệch với lịch sử → sửa Luật cứng hoặc Rubric → bấm **Chạy lại Eval** (có lưu Version & Rollback)."
-    },
-    {
-      "id": "p5",
-      "type": "text",
-      "x": 40,
-      "y": 1075,
-      "width": 680,
-      "height": 180,
-      "color": "4",
-      "text": "### 5. Chạy Thử Staging & Kiểm Duyệt (Quality Gate)\n- Chạy end-to-end trên **Staging** bằng dữ liệu tổng hợp (không lộ dữ liệu thật).\n- Chỉ mở nút Publish khi đủ **Định nghĩa xong**: Eval ≥ ngưỡng, đủ Guard nội dung + Guard nghiệp vụ, đủ Audit Log & cổng HITL."
-    },
-    {
-      "id": "p6",
-      "type": "text",
-      "x": 40,
-      "y": 1315,
-      "width": 680,
-      "height": 165,
-      "color": "2",
-      "text": "### 6. Ký & Phát Hành Domain Pack (Git Registry)\n- Đóng gói trọn bộ thành **Domain Pack có version + chữ ký**.\n- Mở chạy Production ở **Bậc 1 (Chạy bóng — Shadow Mode)** để đối chiếu kết quả thật mà chưa gây rủi ro."
-    },
-    {
-      "id": "p7",
-      "type": "text",
-      "x": 40,
-      "y": 1540,
-      "width": 680,
-      "height": 180,
-      "color": "2",
-      "text": "### 7. Vòng Lặp Tối Ưu & Nâng Bậc Tự Chủ (Autonomy Ladder)\n- Xem Dashboard: tỉ lệ khớp chạy bóng, các ca bị nhân viên sửa tay, KPI & mức dùng thật.\n- Đạt ngưỡng → nâng bậc (1→2→3); **chi tiền / offer / HĐ khóa cứng bậc 2**. Tụt điểm → tự hạ bậc & đưa ca sai về **Bước 4**."
-    },
-
-    {
-      "id": "grp-arch",
-      "type": "group",
-      "x": 920,
-      "y": 0,
-      "width": 1220,
-      "height": 1760,
-      "color": "5",
-      "label": "B. BẢN ĐỒ 5 LỚP KIẾN TRÚC NỀN TẢNG (Tách Rạch Ròi Từng Trách Nhiệm)"
-    },
-
-    {
-      "id": "l1",
-      "type": "text",
-      "x": 960,
-      "y": 60,
-      "width": 1140,
-      "height": 230,
-      "color": "5",
-      "text": "### LAYER 1 · SURFACES — Bề Mặt Người Dùng & Cổng Tiếp Nhận\n| **Domain Studio (Power User)** | **Rakazo Workspace (End User)** | **Cổng Ngoài & Intake** |\n| :--- | :--- | :--- |\n| Meta-Bot `/setup`, 4 bảng cấu hình trực quan, Skill Eval Studio, Dashboard nâng bậc tự chủ | Chat, Pages, thao tác hồ sơ, hiện **Thẻ duyệt HITL** *(không dùng Always Allow)* | Cổng ứng viên/NCC/LTI (Realm riêng, untrusted) + Email/Webhook qua **Code Filter** loại rác |"
-    },
-    {
-      "id": "l2",
-      "type": "text",
-      "x": 960,
-      "y": 390,
-      "width": 1140,
-      "height": 220,
-      "color": "6",
-      "text": "### LAYER 2 · WORKSPACE CORE — Xương Sống B2B *(Fork mỏng Rakazo — Apache-2.0)*\n| **IAM & Custom Role** | **PostgreSQL + RLS** | **Vault & SpaceKey** | **Billing & Budget Brakes** |\n| :--- | :--- | :--- | :--- |\n| SSO (OIDC/SAML), SCIM 2.0, 7+ vai trò phòng ban | Cô lập cứng tầng DB: `Org → Space → Domain` | Mã hóa theo Space; Zero-Exposure (LLM không thấy pass) | Hạn mức P&L + phanh tự động *(Paperclip)* |"
-    },
-    {
-      "id": "l25",
-      "type": "text",
-      "x": 960,
-      "y": 710,
-      "width": 1140,
-      "height": 300,
-      "color": "2",
-      "text": "### LAYER 2.5 · CASE & PROCESS PLANE — LÕI QUY TRÌNH MỚI *(Trái tim Note 04 — Temporal MIT + Postgres + CEL)*\n- **Case Store:** Lưu **Hồ sơ** (ứng viên, hóa đơn, hợp đồng), giai đoạn hiện tại, lịch sử — *state không nằm trong trí nhớ bot*.\n- **Process Engine (Temporal):** Ép chạy `process/*.yaml`, đếm hạn SLA (Timer), nhận lệnh duyệt (Signal), bàn giao **Typed Handoff**.\n- **Authority Matrix (CEL) & Stage Hooks (Chốt chặn #2):** Quy định đúng Role duyệt + **SoD** + leo thang; móc cứng Guard nghiệp vụ (*Fairness, kiểm soát 100%*) vào lúc chuyển giai đoạn — **Agent không thể đi vòng**.\n- **Autonomy Ladder & Measurement:** Quản lý bậc tự chủ 0→4 bằng số liệu thực tế; ghi KPI (*time-to-hire*, adoption, lớp đối chứng)."
-    },
-    {
-      "id": "l3",
-      "type": "text",
-      "x": 960,
-      "y": 1110,
-      "width": 1140,
-      "height": 240,
-      "color": "4",
-      "text": "### LAYER 3 · GOVERNANCE PLANE — Cổng Kiểm Soát Tập Trung *(Obot — MIT)*\n| **LLM Gateway + Chốt chặn #1** | **vMCP + Dynamic Tool Search** | **Domain Pack Registry (Git)** | **Immutable Audit → SIEM** |\n| :--- | :--- | :--- | :--- |\n| Định tuyến model + chặn PII, Secrets, Prompt Injection, An toàn trẻ em | Mỗi phòng 1 profile tool + OpenAPI→MCP bọc ERP/ATS; chống tràn context | Kho lưu có version & chữ ký: `process`, `rules`, `skills`, `policy`, `evals` | Nhật ký chỉ thêm, ghi rõ `initiator_kind` *(person vs routine)* |"
-    },
-    {
-      "id": "l4",
-      "type": "text",
-      "x": 960,
-      "y": 1450,
-      "width": 1140,
-      "height": 230,
-      "color": "3",
-      "text": "### LAYER 4 · EXECUTION — Tầng Thực Thi *(Nguyên tắc: Code làm luật cứng, LLM chỉ phán đoán)*\n| **Deterministic Rules (Code)** | **Agent Worker (Stateless)** | **Sandbox (On-Demand)** | **External Agents (AG-UI)** |\n| :--- | :--- | :--- | :--- |\n| Luật cứng & bảng luật có unit test (`hard_criteria.py`) | Vòng lặp mỏng chạy `SKILL.md` (chấm rubric có trích dẫn) | Container Docker/gVisor — chỉ bật khi cần Computer Use | Cắm agent đặc thù (LangGraph, ADK...) dùng chung quyền & audit |"
-    },
-
-    {
-      "id": "grp-run",
-      "type": "group",
-      "x": 2300,
-      "y": 0,
-      "width": 660,
-      "height": 1760,
-      "color": "1",
-      "label": "C. LUỒNG END USER — RUN-TIME (1 Hồ Sơ Chạy Thực Tế)"
-    },
-    {
-      "id": "r1",
-      "type": "text",
-      "x": 2340,
-      "y": 60,
-      "width": 580,
-      "height": 220,
-      "color": "5",
-      "text": "### Chặng 1 · Tiếp Nhận & Lọc Rác\n- Email / Webhook / ATS đẩy hồ sơ mới (CV, hóa đơn, hợp đồng).\n- **Code Filter (L1)** loại thư rác → mở hồ sơ mới trong **Case Store (L2.5)**."
-    },
-    {
-      "id": "r2",
-      "type": "text",
-      "x": 2340,
-      "y": 380,
-      "width": 580,
-      "height": 240,
-      "color": "3",
-      "text": "### Chặng 2 · Luật Cứng Trước, AI Phán Đoán Sau\n- **Rules (L4)** chạy điều kiện bắt buộc trước (`hard_criteria.py`).\n- **Worker (L4)** gọi **LLM Gateway (L3 — Chốt chặn #1)** chấm điểm theo `SKILL.md` kèm trích dẫn bằng chứng."
-    },
-    {
-      "id": "r3",
-      "type": "text",
-      "x": 2340,
-      "y": 720,
-      "width": 580,
-      "height": 260,
-      "color": "2",
-      "text": "### Chặng 3 · Cổng Duyệt HITL & Thẩm Quyền\n- Ca rơi vùng xám / giá trị lớn / việc hậu quả cao → **Authority Matrix (L2.5)** gửi **Thẻ duyệt + Bằng chứng** lên **Rakazo UI (L1)**.\n- Đúng Role duyệt, đảm bảo **SoD**, quá hạn SLA (48h) tự leo thang."
-    },
-    {
-      "id": "r4",
-      "type": "text",
-      "x": 2340,
-      "y": 1080,
-      "width": 580,
-      "height": 240,
-      "color": "4",
-      "text": "### Chặng 4 · Guard Nghiệp Vụ & Bàn Giao Cụm\n- Trước khi chuyển giai đoạn: **Stage Hooks (L2.5 — Chốt chặn #2)** ép chạy *Fairness / Kiểm soát 100%*.\n- **Process Engine** bàn giao sang cụm kế tiếp bằng **Typed Handoff** (có schema cố định)."
-    },
-    {
-      "id": "r5",
-      "type": "text",
-      "x": 2340,
-      "y": 1420,
-      "width": 580,
-      "height": 260,
-      "color": "1",
-      "text": "### Chặng 5 · Chốt Đầu Ra, Audit & Phản Hồi Về Power User\n- Hành động nhạy cảm (Ký Offer / Giải ngân / Hợp đồng) **luôn dừng ở Bậc 2** chờ người ký.\n- Ghi **Immutable Audit (L3)** + đẩy **số liệu khớp & ca sửa tay** ngược về **Bước 7 (Power User)** để cải tiến!"
-    }
-  ],
-  "edges": [
-    {
-      "id": "ep1",
-      "fromNode": "p1",
-      "fromSide": "bottom",
-      "toNode": "p2",
-      "toSide": "top"
-    },
-    {
-      "id": "ep2",
-      "fromNode": "p2",
-      "fromSide": "bottom",
-      "toNode": "p3",
-      "toSide": "top"
-    },
-    {
-      "id": "ep3",
-      "fromNode": "p3",
-      "fromSide": "bottom",
-      "toNode": "p4",
-      "toSide": "top"
-    },
-    {
-      "id": "ep4",
-      "fromNode": "p4",
-      "fromSide": "bottom",
-      "toNode": "p5",
-      "toSide": "top"
-    },
-    {
-      "id": "ep5",
-      "fromNode": "p5",
-      "fromSide": "bottom",
-      "toNode": "p6",
-      "toSide": "top"
-    },
-    {
-      "id": "ep6",
-      "fromNode": "p6",
-      "fromSide": "bottom",
-      "toNode": "p7",
-      "toSide": "top"
-    },
-    {
-      "id": "ep-loop",
-      "fromNode": "p7",
-      "fromSide": "left",
-      "toNode": "p4",
-      "toSide": "left",
-      "label": "Ca sai thực tế → bổ sung Eval"
-    },
-
-    {
-      "id": "el1",
-      "fromNode": "l1",
-      "fromSide": "bottom",
-      "toNode": "l2",
-      "toSide": "top"
-    },
-    {
-      "id": "el2",
-      "fromNode": "l2",
-      "fromSide": "bottom",
-      "toNode": "l25",
-      "toSide": "top"
-    },
-    {
-      "id": "el3",
-      "fromNode": "l25",
-      "fromSide": "bottom",
-      "toNode": "l3",
-      "toSide": "top"
-    },
-    {
-      "id": "el4",
-      "fromNode": "l3",
-      "fromSide": "bottom",
-      "toNode": "l4",
-      "toSide": "top"
-    },
-
-    {
-      "id": "er1",
-      "fromNode": "r1",
-      "fromSide": "bottom",
-      "toNode": "r2",
-      "toSide": "top"
-    },
-    {
-      "id": "er2",
-      "fromNode": "r2",
-      "fromSide": "bottom",
-      "toNode": "r3",
-      "toSide": "top"
-    },
-    {
-      "id": "er3",
-      "fromNode": "r3",
-      "fromSide": "bottom",
-      "toNode": "r4",
-      "toSide": "top"
-    },
-    {
-      "id": "er4",
-      "fromNode": "r4",
-      "fromSide": "bottom",
-      "toNode": "r5",
-      "toSide": "top"
-    },
-
-    {
-      "id": "x-publish",
-      "fromNode": "p6",
-      "fromSide": "right",
-      "toNode": "l3",
-      "toSide": "left",
-      "label": "Publish Domain Pack"
-    },
-    {
-      "id": "x-promote",
-      "fromNode": "p7",
-      "fromSide": "right",
-      "toNode": "l25",
-      "toSide": "left",
-      "label": "Điều chỉnh Bậc Tự Chủ"
-    },
-    {
-      "id": "x-run",
-      "fromNode": "l25",
-      "fromSide": "right",
-      "toNode": "r3",
-      "toSide": "left",
-      "label": "Thực thi Hồ sơ"
-    }
-  ]
+	"nodes":[
+		{"id":"grp-moat","type":"group","x":0,"y":0,"width":760,"height":1760,"color":"6","label":"A. LUỒNG POWER USER — BUILD-TIME (THE MOAT: Tạo & Tinh Chỉnh Quy Trình Không Cần Code)"},
+		{"id":"p1","type":"text","x":40,"y":60,"width":680,"height":180,"color":"6","text":"### 1. Nạp Nghiệp Vụ & Dữ Liệu Lịch Sử\n- **Power User làm:** Upload SOP / quy chế phòng ban, bảng thẩm quyền, rubric chấm điểm + **dữ liệu lịch sử** (CV/hóa đơn cũ đã xử lý).\n- **Giá trị:** Không phải bắt đầu từ trang giấy trắng hay ngồi vẽ flowchart kéo-thả."},
+		{"id":"p2","type":"text","x":40,"y":300,"width":680,"height":200,"color":"6","text":"### 2. Hội Thoại Đồng Thiết Kế (Meta-Bot Tự Tách 5 Lớp)\n- **Meta-Bot** đọc SOP, hỏi ngược 3–5 câu làm rõ rồi tự biên dịch ra đúng **5 lớp** (Power User không cần biết YAML/CEL/Python):\n  - Khung giai đoạn & SLA → `process/*.yaml` · Luật cứng → `rules/`\n  - Phán đoán AI → `skills/SKILL.md` · Duyệt & SoD → `authority.cel` · Tool → `vMCP`"},
+		{"id":"p3","type":"text","x":40,"y":560,"width":680,"height":200,"color":"6","text":"### 3. Tinh Chỉnh Trên 4 Bảng Trực Quan (Domain Studio)\n- **Bảng Giai đoạn:** Xem/sửa bước bắt buộc, hạn SLA, cổng HITL.\n- **Bảng Luật cứng (kiểu Excel):** Chỉnh ngưỡng tiền, bằng cấp, điều kiện loại.\n- **Ma trận Thẩm quyền:** Chọn Role duyệt, bật SoD *(bị khóa trần Policy tổ chức)*.\n- **Skill Editor & Teach-by-Demo:** Dạy agent bằng ví dụ thực tế."},
+		{"id":"p4","type":"text","x":40,"y":820,"width":680,"height":195,"color":"4","text":"### 4. Auto-Eval Từ Lịch Sử & Sửa Lệch Ngay Tại Chỗ\n- Hệ thống tự sinh bộ test: **Golden Eval** (từ lịch sử) + **Fairness** (đổi giới tính/tên) + **Red-Team** (chèn lệnh).\n- **Power User làm:** Xem các ca AI chấm lệch với lịch sử → sửa Luật cứng hoặc Rubric → bấm **Chạy lại Eval** (có lưu Version & Rollback)."},
+		{"id":"p5","type":"text","x":40,"y":1075,"width":680,"height":180,"color":"4","text":"### 5. Chạy Thử Staging & Kiểm Duyệt (Quality Gate)\n- Chạy end-to-end trên **Staging** bằng dữ liệu tổng hợp (không lộ dữ liệu thật).\n- Chỉ mở nút Publish khi đủ **Định nghĩa xong**: Eval ≥ ngưỡng, đủ Guard nội dung + Guard nghiệp vụ, đủ Audit Log & cổng HITL."},
+		{"id":"p6","type":"text","x":40,"y":1315,"width":680,"height":165,"color":"2","text":"### 6. Ký & Phát Hành Domain Pack (Git Registry)\n- Đóng gói trọn bộ thành **Domain Pack có version + chữ ký**.\n- Mở chạy Production ở **Bậc 1 (Chạy bóng — Shadow Mode)** để đối chiếu kết quả thật mà chưa gây rủi ro."},
+		{"id":"p7","type":"text","x":40,"y":1540,"width":680,"height":180,"color":"2","text":"### 7. Vòng Lặp Tối Ưu & Nâng Bậc Tự Chủ (Autonomy Ladder)\n- Xem Dashboard: tỉ lệ khớp chạy bóng, các ca bị nhân viên sửa tay, KPI & mức dùng thật.\n- Đạt ngưỡng → nâng bậc (1→2→3); **chi tiền / offer / HĐ khóa cứng bậc 2**. Tụt điểm → tự hạ bậc & đưa ca sai về **Bước 4**."},
+		{"id":"grp-arch","type":"group","x":920,"y":0,"width":1220,"height":1760,"color":"5","label":"B. BẢN ĐỒ 5 LỚP KIẾN TRÚC NỀN TẢNG (Tách Rạch Ròi Từng Trách Nhiệm)"},
+		{"id":"l1","type":"text","x":960,"y":60,"width":1140,"height":230,"color":"5","text":"### LAYER 1 · SURFACES — Bề Mặt Người Dùng & Cổng Tiếp Nhận\n| **Domain Studio (Power User)** | **Rakazo Workspace (End User)** | **Cổng Ngoài & Intake** |\n| :--- | :--- | :--- |\n| Meta-Bot `/setup`, 4 bảng cấu hình trực quan, Skill Eval Studio, Dashboard nâng bậc tự chủ | Chat, Pages, thao tác hồ sơ, hiện **Thẻ duyệt HITL** *(không dùng Always Allow)* | Cổng ứng viên/NCC/LTI (Realm riêng, untrusted) + Email/Webhook qua **Code Filter** loại rác |"},
+		{"id":"l2","type":"text","x":960,"y":390,"width":1140,"height":220,"color":"6","text":"### LAYER 2 · WORKSPACE CORE — Xương Sống B2B *(Fork mỏng Rakazo — Apache-2.0)*\n| **IAM & Custom Role** | **PostgreSQL + RLS** | **Vault & SpaceKey** | **Billing & Budget Brakes** |\n| :--- | :--- | :--- | :--- |\n| SSO (OIDC/SAML), SCIM 2.0, 7+ vai trò phòng ban | Cô lập cứng tầng DB: `Org → Space → Domain` | Mã hóa theo Space; Zero-Exposure (LLM không thấy pass) | Hạn mức P&L + phanh tự động *(Paperclip)* |"},
+		{"id":"l25","type":"text","x":960,"y":710,"width":1140,"height":300,"color":"2","text":"### LAYER 2.5 · CASE & PROCESS PLANE — LÕI QUY TRÌNH MỚI *(Trái tim Note 04 — Temporal MIT + Postgres + CEL)*\n- **Case Store:** Lưu **Hồ sơ** (ứng viên, hóa đơn, hợp đồng), giai đoạn hiện tại, lịch sử — *state không nằm trong trí nhớ bot*.\n- **Process Engine (Temporal):** Ép chạy `process/*.yaml`, đếm hạn SLA (Timer), nhận lệnh duyệt (Signal), bàn giao **Typed Handoff**.\n- **Authority Matrix (CEL) & Stage Hooks (Chốt chặn #2):** Quy định đúng Role duyệt + **SoD** + leo thang; móc cứng Guard nghiệp vụ (*Fairness, kiểm soát 100%*) vào lúc chuyển giai đoạn — **Agent không thể đi vòng**.\n- **Autonomy Ladder & Measurement:** Quản lý bậc tự chủ 0→4 bằng số liệu thực tế; ghi KPI (*time-to-hire*, adoption, lớp đối chứng)."},
+		{"id":"l3","type":"text","x":960,"y":1110,"width":1140,"height":240,"color":"4","text":"### LAYER 3 · GOVERNANCE PLANE — Cổng Kiểm Soát Tập Trung *(Obot — MIT)*\n| **LLM Gateway + Chốt chặn #1** | **vMCP + Dynamic Tool Search** | **Domain Pack Registry (Git)** | **Immutable Audit → SIEM** |\n| :--- | :--- | :--- | :--- |\n| Định tuyến model + chặn PII, Secrets, Prompt Injection, An toàn trẻ em | Mỗi phòng 1 profile tool + OpenAPI→MCP bọc ERP/ATS; chống tràn context | Kho lưu có version & chữ ký: `process`, `rules`, `skills`, `policy`, `evals` | Nhật ký chỉ thêm, ghi rõ `initiator_kind` *(person vs routine)* |"},
+		{"id":"l4","type":"text","x":960,"y":1450,"width":1140,"height":230,"color":"3","text":"### LAYER 4 · EXECUTION — Tầng Thực Thi *(Nguyên tắc: Code làm luật cứng, LLM chỉ phán đoán)*\n| **Deterministic Rules (Code)** | **Agent Worker (Stateless)** | **Sandbox (On-Demand)** | **External Agents (AG-UI)** |\n| :--- | :--- | :--- | :--- |\n| Luật cứng & bảng luật có unit test (`hard_criteria.py`) | Vòng lặp mỏng chạy `SKILL.md` (chấm rubric có trích dẫn) | Container Docker/gVisor — chỉ bật khi cần Computer Use | Cắm agent đặc thù (LangGraph, ADK...) dùng chung quyền & audit |"},
+		{"id":"grp-run","type":"group","x":2300,"y":0,"width":660,"height":1760,"color":"1","label":"C. LUỒNG END USER — RUN-TIME (1 Hồ Sơ Chạy Thực Tế)"},
+		{"id":"r1","type":"text","x":2340,"y":60,"width":580,"height":220,"color":"5","text":"### Chặng 1 · Tiếp Nhận & Lọc Rác\n- Email / Webhook / ATS đẩy hồ sơ mới (CV, hóa đơn, hợp đồng).\n- **Code Filter (L1)** loại thư rác → mở hồ sơ mới trong **Case Store (L2.5)**."},
+		{"id":"r2","type":"text","x":2340,"y":380,"width":580,"height":240,"color":"3","text":"### Chặng 2 · Luật Cứng Trước, AI Phán Đoán Sau\n- **Rules (L4)** chạy điều kiện bắt buộc trước (`hard_criteria.py`).\n- **Worker (L4)** gọi **LLM Gateway (L3 — Chốt chặn #1)** chấm điểm theo `SKILL.md` kèm trích dẫn bằng chứng."},
+		{"id":"r3","type":"text","x":2340,"y":720,"width":580,"height":260,"color":"2","text":"### Chặng 3 · Cổng Duyệt HITL & Thẩm Quyền\n- Ca rơi vùng xám / giá trị lớn / việc hậu quả cao → **Authority Matrix (L2.5)** gửi **Thẻ duyệt + Bằng chứng** lên **Rakazo UI (L1)**.\n- Đúng Role duyệt, đảm bảo **SoD**, quá hạn SLA (48h) tự leo thang."},
+		{"id":"r4","type":"text","x":2340,"y":1080,"width":580,"height":240,"color":"4","text":"### Chặng 4 · Guard Nghiệp Vụ & Bàn Giao Cụm\n- Trước khi chuyển giai đoạn: **Stage Hooks (L2.5 — Chốt chặn #2)** ép chạy *Fairness / Kiểm soát 100%*.\n- **Process Engine** bàn giao sang cụm kế tiếp bằng **Typed Handoff** (có schema cố định)."},
+		{"id":"r5","type":"text","x":2340,"y":1420,"width":580,"height":260,"color":"1","text":"### Chặng 5 · Chốt Đầu Ra, Audit & Phản Hồi Về Power User\n- Hành động nhạy cảm (Ký Offer / Giải ngân / Hợp đồng) **luôn dừng ở Bậc 2** chờ người ký.\n- Ghi **Immutable Audit (L3)** + đẩy **số liệu khớp & ca sửa tay** ngược về **Bước 7 (Power User)** để cải tiến!"}
+	],
+	"edges":[
+		{"id":"ep1","fromNode":"p1","fromSide":"bottom","toNode":"p2","toSide":"top"},
+		{"id":"ep2","fromNode":"p2","fromSide":"bottom","toNode":"p3","toSide":"top"},
+		{"id":"ep3","fromNode":"p3","fromSide":"bottom","toNode":"p4","toSide":"top"},
+		{"id":"ep4","fromNode":"p4","fromSide":"bottom","toNode":"p5","toSide":"top"},
+		{"id":"ep5","fromNode":"p5","fromSide":"bottom","toNode":"p6","toSide":"top"},
+		{"id":"ep6","fromNode":"p6","fromSide":"bottom","toNode":"p7","toSide":"top"},
+		{"id":"ep-loop","fromNode":"p7","fromSide":"left","toNode":"p4","toSide":"left","label":"Ca sai thực tế → bổ sung Eval"},
+		{"id":"el1","fromNode":"l1","fromSide":"bottom","toNode":"l2","toSide":"top"},
+		{"id":"el2","fromNode":"l2","fromSide":"bottom","toNode":"l25","toSide":"top"},
+		{"id":"el3","fromNode":"l25","fromSide":"bottom","toNode":"l3","toSide":"top"},
+		{"id":"el4","fromNode":"l3","fromSide":"bottom","toNode":"l4","toSide":"top"},
+		{"id":"er1","fromNode":"r1","fromSide":"bottom","toNode":"r2","toSide":"top"},
+		{"id":"er2","fromNode":"r2","fromSide":"bottom","toNode":"r3","toSide":"top"},
+		{"id":"er3","fromNode":"r3","fromSide":"bottom","toNode":"r4","toSide":"top"},
+		{"id":"er4","fromNode":"r4","fromSide":"bottom","toNode":"r5","toSide":"top"},
+		{"id":"x-publish","fromNode":"p6","fromSide":"right","toNode":"l3","toSide":"left","label":"Publish Domain Pack"},
+		{"id":"x-promote","fromNode":"p7","fromSide":"right","toNode":"l25","toSide":"left","label":"Điều chỉnh Bậc Tự Chủ"},
+		{"id":"x-run","fromNode":"l25","fromSide":"right","toNode":"r3","toSide":"left","label":"Thực thi Hồ sơ"}
+	]
 }

@@ -53,7 +53,7 @@ Sau khi **clone và kiểm tra trực tiếp mã nguồn + LICENSE + DB Schema**
 - [[04 - Áp dụng Reference Architecture vào đề bài cAI]] — Đối chiếu kiến trúc 03 với brief, thêm Case & Process Plane, áp dụng thử cho Domain Pack Tuyển dụng, lộ trình 12 tuần.
 
 ### Khái niệm & Trực quan hóa (`KeyNotes/` & Interactive HTML)
-- **Interactive HTML Explorer (mở bằng trình duyệt):** `01-Research/cAI/cAI-Architecture-Explorer.html` — Bản mô phỏng tương tác 4 tab: Luồng Power User (Moat), Bản đồ 5 lớp bấm xem chi tiết, Mô phỏng hồ sơ Tuyển dụng/Tài chính chạy thật, và Bảng đối chiếu Code vs LLM.
+- **Interactive HTML Explorer (bấm để mở trình duyệt):** [cAI-Architecture-Explorer.html](file:///home/hungnhv2/Documents/Obsidian%20Vault/01-Research/cAI/cAI-Architecture-Explorer.html) — Bản mô phỏng tương tác 4 tab: Luồng Power User (Moat), Bản đồ 5 lớp bấm xem chi tiết, Mô phỏng hồ sơ Tuyển dụng/Tài chính chạy thật, và Bảng đối chiếu Code vs LLM.
 - [[cAI Architecture - Layer Flow.canvas]] — Sơ đồ Canvas 3 cột ngay trong Obsidian.
 - [[cAI Glossary - Thuật Ngữ Kiến Trúc & Nghiệp Vụ]] — Bảng tra cứu hơn 70 thuật ngữ kiến trúc, bảo mật, eval, bản quyền & nghiệp vụ dùng trong toàn bộ dự án cAI.
 
